@@ -1,10 +1,9 @@
 from fastapi import FastAPI
+from app.api.routes import router
 
 app = FastAPI(title="ClearSOC Backend")
 
-@app.get("/")
-def root():
-    return {"message": "ClearSOC backend is running"}
+app.include_router(router)
 
 @app.get("/health")
 def health():
