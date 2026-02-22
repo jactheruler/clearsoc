@@ -1,0 +1,3 @@
+[submodule "lab/wazuh"]
+	path = lab/wazuh
+	url = https://github.com/wazuh/wazuh-docker.git
